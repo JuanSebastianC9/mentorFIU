@@ -17879,6 +17879,14 @@ video {
   transition-delay: 1000ms;
 }
 
+/*
+    Add custom css below this comment
+*/
+
+ul > li {
+  display: inline-block;
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
@@ -86926,4 +86934,3 @@ video {
     transition-delay: 1000ms;
   }
 }
-

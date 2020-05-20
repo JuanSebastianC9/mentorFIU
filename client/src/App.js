@@ -10,6 +10,7 @@ import BecomeMentor from './components/stateless/BecomeMentor'
 import LoginPage from './components/stateless/LoginPage'
 
 const App = () => {
+  //Using routing to delate page baded on url routing
   return (
     <div className=''>
       <Router>

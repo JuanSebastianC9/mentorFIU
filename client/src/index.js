@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
+const store = createStore(AllReducers);
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+      <App />
+  </Provider>,
   document.getElementById('root')
 );
 
