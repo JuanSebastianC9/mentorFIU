@@ -6,15 +6,16 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import Firebase, { FirebaseContext } from './components/firebase';
+import allReducers from './redux/reducer/reducer';
 
-const store = createStore(AllReducers);
+const store = createStore(allReducers);
 ReactDOM.render(
   <FirebaseContext.Provider value={new Firebase()}>
     <Provider store={store}>
       <App />
-  </Provider>,
-  document.getElementById('root')
-  </FirebaseContext.Provider>
+  </Provider>
+  </FirebaseContext.Provider>,
+   document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

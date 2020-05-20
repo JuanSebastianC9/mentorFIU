@@ -6,11 +6,11 @@ export const responseActions = {
 
 
 const request = user => { 
-    return { type: userConstants.LOGIN_REQUEST, user } 
+    return { type: 'LOGIN_REQUEST', user } 
 }
 const success = user => { 
-    return { type: userConstants.LOGIN_SUCCESS, user } 
+    return { type: 'LOGIN_SUCCESS', user } 
 }
 const failure = error => { 
-    return { type: userConstants.LOGIN_FAILURE, error } 
+    return { type: 'LOGIN_FAILURE', error } 
 }
