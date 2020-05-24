@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom'
 import {useSpring, animated} from 'react-spring'
 
 const Navigation = () => {
+    //conf for the animation
     const props = useSpring({
         opacity: 1, 
         from: {transform: 'translateX(-100%)'},
         to: {transform: 'translateX(50%'}
     })
+    //Using Tailwindcss
     return (
         <div className='flex justify-between align-middle px-10 w-full h-16'>
             <Link to='/'>
