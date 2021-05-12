@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "autoprefixer": "^9.8.0",
     "firebase": "^7.14.4",
-    "postcss": "^7.0.30",
+    "postcss": "^8.2.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
